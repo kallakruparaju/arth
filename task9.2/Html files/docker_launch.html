@@ -1,0 +1,42 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body style="background-color:black">
+<form method="post">
+<p align="center">
+<button type="submit" class="home" formaction="http://192.168.43.158/home.html">Home </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/Linux.html">Linux </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/LVM.html">LVM</button>
+<button type="submit" class="button" formaction="http://192.168.43.158/docker.html">Docker</button>
+</p>
+</form>
+<button onclick="goBack()" class="button">Go Back</button>
+<img  src="Docker-Logo.png"  class="center"/> 
+</form>
+
+<form method="post" action="http://192.168.43.158/cgi-bin/docker.py">
+	</p align="center">
+	<div class="column">
+		<h3>Launching Docker Container</h3>
+		<input required="True" type="text" name="osname" placeholder="Enter Conatiner name ..." style="width: 85%;margin-bottom:15px" />
+		<select required="True" name="image" style="width: 85%; height: 35px; margin-bottom: 20px;">
+			<option value="">Select Image</option>
+			<option value="centos:7">centos:7</option>
+			<option value="centos:latest">centos:latest</option>
+			<option value="ubuntu:14.04">ubuntu:14.04</option>
+		</select>
+		<button class="blue" name="docker" value="launch" style="margin-top: 15px;">Launch Docker Container</button>
+		
+	</div>
+	</p>
+</form>
+</body>
+</html>
+
+

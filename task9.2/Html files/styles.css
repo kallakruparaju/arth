@@ -1,0 +1,147 @@
+
+.button{
+   
+  border: 2px solid white;
+  color: black;
+  font-weight:bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  border-radius:5px;
+  background-color:red;
+  display: inline-block;
+  font-size: 16px;
+  margin:4px 2px;
+  transition-duration:0.4s;
+  cursor:pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.lvm{
+   
+  border: 2px solid white;
+  color: black;
+  font-weight:bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  border-radius:5px;
+  background-color:red;
+  display: inline-block;
+  font-size: 16px;
+  margin:4px 2px;
+  transition-duration:0.4s;
+  cursor:pointer;
+}
+
+.lvm:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.blue{
+   
+  border: 2px solid black;
+  color: white;
+  font-weight:bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  border-radius:5px;
+  background-color:blue;
+  display: inline-block;
+  font-size: 16px;
+  margin:4px 2px;
+  transition-duration:0.4s;
+  cursor:pointer;
+}
+
+.blue:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.docker{
+   
+  border: 2px solid white;
+  color: white;
+  font-weight:bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  border-radius:5px;
+  background-color:blue;
+  display: inline-block;
+  font-size: 16px;
+  margin:4px 2px;
+  transition-duration:0.4s;
+  cursor:pointer;
+}
+
+.docker:hover {
+  background-color:yellow;
+  color: black;
+}
+
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.home {
+   
+  border: 2px solid yellow;
+  color: black;
+  font-weight:bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  border-radius:5px;
+  background-color:yellow;
+  display: inline-block;
+  font-size: 16px;
+  margin:4px 2px;
+  transition-duration:0.4s;
+  cursor:pointer;
+}
+
+.home:hover {
+  background-color: blue;
+  color: white;
+}
+
+.column {
+	background-color:darksalmon;
+	width: 24.5%;
+	height:400px;
+	float: left;
+	margin-left: 500px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+
+input[type=text] {
+  
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 30px;
+}

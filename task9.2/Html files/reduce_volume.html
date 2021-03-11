@@ -1,0 +1,37 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body style="background-color:black">
+<form method="post">
+<p align="center">
+<button type="submit" class="home" formaction="http://172.17.0.1/home.html">Home </button>
+<button type="submit" class="button" formaction="http://172.17.0.1/Linux.html">Linux </button>
+<button type="submit" class="button" formaction="http://172.17.0.1/LVM.html">LVM</button>
+
+<button type="submit" class="button" formaction="http://172.17.0.1/docker.html">Docker</button>
+</p>
+</form>
+<button onclick="goBack()" class="button">Go Back</button>
+
+</form>
+
+<form method="post" action="http://172.17.0.1/cgi-bin/lvm.py">
+	</p align="center">
+	<div class="column">
+		<h3>Creating Physical volume</h3>
+		<input required="True" type="text" name="devicename" placeholder="Enter Device ..." style="width: 85%;margin-bottom:15px" />
+		<button class="lvm" name="lvm" value="cpv" style="margin-top: 15px;">Create Physical volume</button>
+		
+	</div>
+	</p>
+</form>
+</body>
+</html>
+
+

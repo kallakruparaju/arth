@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body style="background-color:black">
+<form method="post">
+<p align="center">
+<button type="submit" class="home" formaction="http://192.168.43.158/home.html">Home </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/Linux.html">Linux </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/LVM.html">LVM</button>
+<button type="submit" class="button" formaction="http://192.168.43.158/docker.html">Docker</button>
+</p>
+</form>
+<button onclick="goBack()" class="button">Go Back</button>
+<h1 align="center" style="color:white"><b>LVM</b></h1> 
+<form method="post">
+<p align="center">
+<button type="submit" class="blue" formaction="http://192.168.43.158/cgi-bin/lvm.py" name="lvm" value="fdisk" >Display Harddisks </button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/create_physical.html">Create Physical volume</button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/display_physical.html" >Display Physical volume </button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/create_volume.html">Create volume group</button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/display_volume.html" >Display volume groups </button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/create_logic.html">Create logic volume</button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/display_logic.html" >Display logic volume </button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/format_logic.html">Format logic volume</button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/extend_volume.html">Extend volume</button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/resize_volume.html">Resize volume</button>
+<button type="submit" class="blue" formaction="http://192.168.43.158/cgi-bin/lvm.py" name="lvm" value="mountpoints" >Display mount points </button>
+</p>
+</form>
+</body>
+</html>
+
+
+
+	

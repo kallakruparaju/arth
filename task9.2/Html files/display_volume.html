@@ -1,0 +1,37 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body style="background-color:black">
+<form method="post">
+<p align="center">
+<button type="submit" class="home" formaction="http://192.168.43.158/home.html">Home </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/Linux.html">Linux </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/LVM.html">LVM</button>
+
+<button type="submit" class="button" formaction="http://192.168.43.158/docker.html">Docker</button>
+</p>
+</form>
+<button onclick="goBack()" class="button">Go Back</button>
+
+</form>
+
+<form method="post" action="http://192.168.43.158/cgi-bin/lvm.py">
+	</p align="center">
+	<div class="column">
+		<h3>Displaying volumegroup</h3>
+		<input required="True" type="text" name="vgname" placeholder="Enter Volume group name ..." style="width: 85%;margin-bottom:15px" />
+		<button class="lvm" name="lvm" value="dvg" style="margin-top: 15px;">Display Volume group</button>
+		
+	</div>
+	</p>
+</form>
+</body>
+</html>
+
+

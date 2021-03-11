@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body style="background-color:black">
+<form method="post">
+<p align="center">
+<button type="submit" class="home" formaction="http://192.168.43.158/home.html">Home </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/Linux.html">Linux </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/LVM.html">LVM</button>
+<button type="submit" class="button" formaction="http://192.168.43.158/docker.html">Docker</button>
+</p>
+</form>
+<button onclick="goBack()" class="button">Go Back</button>
+<h1 align="center" style="color:white" ><b>Linux</b></h1>
+
+<form method="post"  action="http://192.168.43.158/cgi-bin/linux.py">
+
+<h1  style="color:white" ><b>Enter your Requirement.....</b></h1>
+<input name="input" type="text" placeholder="Enter your Command..." style="width:40%" />
+<button type="submit" class="blue" style="width: 15%;"> Run</button>
+</form>
+</body>
+</html>
+
+
+

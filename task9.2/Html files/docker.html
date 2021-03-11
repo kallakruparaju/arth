@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body style="background-color:black">
+<form method="post">
+<p align="center">
+<button type="submit" class="home" formaction="http://192.168.43.158/home.html">Home </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/Linux.html">Linux </button>
+<button type="submit" class="button" formaction="http://192.168.43.158/LVM.html">LVM</button>
+<button type="submit" class="button" formaction="http://192.168.43.158/docker.html">Docker</button>
+</p>
+</form>
+<button onclick="goBack()" class="button">Go Back</button>
+<img  src="Docker-Logo.png"  class="center"/> 
+<form method="post">
+<p align="center">
+<button type="submit" class="docker" formaction="http://192.168.43.158/cgi-bin/docker.py" name="docker" value="images" >Docker Images </button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/cgi-bin/docker.py" name="docker" value="containers" >List Containers</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/cgi-bin/docker.py"name="docker" value="container" >List Running Containers</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/docker_start.html">Restart container</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/docker_stop.html">Stop container</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/docker_launch.html">Launching Docker container</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/docker_attach.html">Attach docker container</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/docker_remove_container.html">Remove Docker Container</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/cgi-bin/docker.py" name="docker" value="remove">Remove all Docker Container</button>
+<button type="submit" class="docker" formaction="http://192.168.43.158/docker_remove_image.html">Remove Image</button>
+</p>
+</form>
+</body>
+</html>
+
+
+

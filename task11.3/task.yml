@@ -1,0 +1,33 @@
+- hosts: all
+  vars_files:
+  - task_var.yml
+  tasks:
+  - name: creating new document root
+    file:
+          state: directory
+          path: "{{ doc_root }}"
+  - copy:
+          dest: "{{ doc_root }}/index.html"
+          content: "Welcome to my webpage....."
+
+  - name: configuring httpd service
+    template:
+          src: "httpd_task.conf"
+          dest: "/etc/httpd/conf.d/task.conf"
+    notify: restart httpd
+
+  - name: firewall service
+    command: systemctl restart firewalld
+  - firewalld:
+          port: "{{ http_port }}/tcp"
+          state: enabled
+          immediate: yes
+          permanent: yes
+  
+  handlers:
+  - name: restart httpd
+    service:
+          name: "httpd"
+          state: restarted
+          enabled: yes
+
