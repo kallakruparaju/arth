@@ -1,0 +1,63 @@
+- name: Dynamic Docker Configuration
+  hosts: localhost
+  tasks:
+
+        
+    - name: pulling docker image
+      docker_image:
+        name: "kallakruparaju/docker-ssh:v1"
+        source: pull
+        
+    - name: launching container
+      docker_container:
+           name: "webserver"
+           image: "kallakruparaju/docker-ssh:v1"
+           detach: yes
+           state: started
+           interactive: yes
+           tty: yes
+           exposed_ports:
+           - "80"
+           - "20"
+           ports:
+           - "8080:80"
+           - "2222:22"
+    - name: Retriving ip address of running Container
+      docker_container_info:
+        name: "webserver"
+      register: container
+    - debug:
+            var: container.container.NetworkSettings.IPAddress
+    - name: Updating Inventory file
+      blockinfile:
+        path: /home/kruparaju/ipadr.txt
+        block: |
+                [docker]
+                {{ container['container']['NetworkSettings']['IPAddress'] }} ansible_ssh_user=root ansible_ssh_pass=kruparaju  ansible_connection=ssh  
+    - name: Refresh the inventory file
+      meta: refresh_inventory 
+                    
+- name: Configuring Webserver inside Docker container
+  hosts: docker 
+  tasks:
+
+    - name: Installing httpd
+      package:
+        name: "httpd"
+        state: present
+    - name: Installing php
+      package:
+        name: "php"
+        state: present
+        
+    - name: Copying the php file
+      copy:
+        content: >
+                 <pre>
+                 <?php
+                 print `/usr/sbin/ifconfig`;
+                 ?>
+                 </pre>
+        dest: "/var/www/html/index.php"
+    - name: Starting HTTPD Service
+      command: /usr/sbin/httpd
