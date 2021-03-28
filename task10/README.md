@@ -1,4 +1,4 @@
-### Ansible PlayBook consists of following operations in the managed nodes 
+# Ansible PlayBook consists of following operations in the managed nodes 
 
 # 🔹 Configure Docker
 # 🔹 Start and enable Docker services
