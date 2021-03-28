@@ -15,7 +15,6 @@ ansible-playbook <path-of-your-setup.yml>
 | reg      | region      |
 | img_id   | image id    |
 
-![](https://img.shields.io/badge/%E2%9A%99%EF%B8%8FAnsible-2.10.3-blue)
 
 ![](images/4.png)
 
