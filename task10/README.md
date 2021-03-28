@@ -1,6 +1,6 @@
 # Ansible PlayBook consists of following operations in the managed nodes 
 
- \n🔹 Configure Docker
+ /n🔹 Configure Docker
  </br>🔹 Start and enable Docker services
  🔹 Pull the httpd server image from the Docker Hub
  🔹 Run the docker container and expose it to the public
