@@ -14,3 +14,10 @@ ansible-playbook <path-of-your-setup.yml>
 | -------- | ----------- |
 | reg      | region      |
 | img_id   | image id    |
+
+![](https://img.shields.io/badge/%E2%9A%99%EF%B8%8FAnsible-2.10.3-blue)
+
+![](images/4.png)
+
+Link to article -> [Article](https://www.linkedin.com/posts/yash-indane-aa6534179_vimaldaga-righteducation-educationredefine-activity-6763765795467104257-_Su7)
+
