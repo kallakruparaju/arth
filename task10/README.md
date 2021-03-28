@@ -10,3 +10,7 @@
 ```
 ansible-playbook <path-of-your-setup.yml>
 ```
+| Variable | description |
+| -------- | ----------- |
+| reg      | region      |
+| img_id   | image id    |
