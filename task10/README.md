@@ -7,3 +7,6 @@
 🔹 Run the docker container and expose it to the public
 🔹 Copy the html code in /var/www/html directory and start the web server
 
+```
+ansible-playbook <path-of-your-setup.yml>
+```
