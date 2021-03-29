@@ -1,4 +1,4 @@
-##Launching a docker container with httpd image using ansible playbook
+## Launching a docker container with httpd image using ansible playbook
 # Ansible PlayBook consists of following operations in the managed nodes 
 
  </br>🔹 Configure Docker
